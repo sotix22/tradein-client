@@ -94,7 +94,6 @@
           </div>
           <div
             class="btn further"
-            v-if="ResultRate.Price > 100"
             v-on:click="FinishReqTrue"
           >
             Клиент Согласен
