@@ -266,8 +266,8 @@
         </div>
         <div class="video col_3_box">
           <VideoDemonstraton :Src="vid_6" />
-          <VideoDemonstraton :Src="vid_7" />
           <VideoDemonstraton :Src="vid_8" />
+          <VideoDemonstraton :Src="vid_7" />
         </div>
         <div class="question">
           <div class="question_radio col_3_box">

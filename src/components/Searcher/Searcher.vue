@@ -39,7 +39,9 @@ export default {
 <style lang="scss" scoped>
 .searcher {
   height: 40px;
-  width: max(850px);
+  max-width: 820px;
+  min-width: 420px;
+  width: 100%;
   position: relative;
   display: grid;
   grid-template-columns: auto 1fr auto;
@@ -53,7 +55,9 @@ export default {
   }
 }
 input[type="text"] {
-  width: max(720px);
+  max-width: 720px;
+  min-width: 320px;
+  width: 100%;
   height: 35px;
   border: none;
   background: #f1f3f4;

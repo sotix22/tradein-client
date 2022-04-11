@@ -1,5 +1,5 @@
 <template lang="">
-  <div>
+  <div class="container">
     <el-steps :active="index" align-center>
       <el-step
         v-for="(Step, index) in items"

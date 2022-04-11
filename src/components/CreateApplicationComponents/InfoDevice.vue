@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="info-device">
     <div class="container-fluid">
       <div class="form">
         <div class="form_content">
@@ -282,6 +282,13 @@ export default {
   grid-gap: 40px;
   .btnCheckImei {
     margin-top: 15px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .content {
+    display: grid;
+    grid-template-columns: 1fr !important;
   }
 }
 </style>

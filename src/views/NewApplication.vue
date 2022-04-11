@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="step_container container-fluid">
+    <div class="step_container">
       <Step :index="index" :items="items" />
     </div>
     <keep-alive>

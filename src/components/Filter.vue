@@ -187,7 +187,9 @@ export default {
 
 .filter {
   position: absolute;
-  width: 720px;
+  max-width: 720px;
+  min-width:320px;
+  width: 100%;
   height: 400px;
   top: 10px;
 

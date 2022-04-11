@@ -161,7 +161,7 @@ a:hover :visited {
   right: 0;
   width: 300px;
   height: 100%;
-  z-index: 1;
+  z-index: 2;
 
   .nav_sotiks {
     margin: 20px;
