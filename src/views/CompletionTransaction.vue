@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="container">
     <div class="step_container">
       <Step :index="index" :items="items" />
     </div>
@@ -71,3 +71,4 @@ export default {
   },
 };
 </script>
+<style lang="scss" scoped></style>

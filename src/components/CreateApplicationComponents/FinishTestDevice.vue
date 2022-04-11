@@ -1,6 +1,5 @@
 <template>
   <div class="finish">
-    <div class="block_shadow"></div>
     <div class="finish_block" v-if="Request">
       <div class="finish_content">
         <div class="finish_title">
@@ -92,10 +91,7 @@
           <div class="btn back" v-on:click="FinishReqFalse">
             Клиент Отказался
           </div>
-          <div
-            class="btn further"
-            v-on:click="FinishReqTrue"
-          >
+          <div class="btn further" v-on:click="FinishReqTrue">
             Клиент Согласен
           </div>
         </div>
@@ -152,4 +148,60 @@ export default {
   },
 };
 </script>
-<style lang="scss"></style>
+<style lang="scss" scoped>
+h1 {
+  color: #4f566b;
+  font-family: "Inter500";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  // line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 40px 0;
+}
+h2 {
+  font-family: "Inter400";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  // line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.finish {
+  position: fixed;
+  background: white;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  .finish_block {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    .finish_content {
+      .finish_about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+}
+.finish_context_list {
+  margin: 40px 0;
+  ul {
+    display: grid;
+    grid-template-rows: repeat (3, auto);
+    padding: 0;
+    color: #4f566b;
+    li {
+      font-family: "Inter500";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      color: #4f566b;
+    }
+  }
+}
+</style>

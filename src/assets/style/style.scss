@@ -148,13 +148,12 @@ section {
       }
 
       .form_content_block {
-        width: 1200px;
+        width: 100%;
         margin-bottom: 61px;
         display: grid;
-        justify-content: center;
+        justify-content: left;
         .content {
           display: grid;
-          grid-template-columns: 340px minmax(800px, min-content);
           grid-gap: 16px;
           .content_block_content {
             display: grid;
@@ -346,7 +345,7 @@ section {
 .form_content_block {
   margin-bottom: 61px;
   display: grid;
-  justify-content: center;
+  justify-content: left;
   .video {
     display: grid;
     justify-content: center;
@@ -416,94 +415,101 @@ hr {
 }
 
 .finish_btn {
-  position: absolute;
-  bottom: 40px;
-  left: 0;
-  right: 0;
+  // position: absolute;
+  // bottom: 40px;
+  // left: 0;
+  // right: 0;
 }
 .finish {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  bottom: 0;
+  // position: fixed;
+  // width: 100%;
+  // height: 100%;
+  // bottom: 0;
+  // background: white;
+  // z-index: 1;
   .block_shadow {
-    background: black;
-    height: 28%;
-    width: 100%;
-    opacity: 0.7;
-    bottom: 0;
+    // background: black;
+    // height: 28%;
+    // width: 100%;
+    // opacity: 0.7;
+    // bottom: 0;
   }
   .finish_block {
-    height: 100%;
-    width: 100%;
-    background: white;
-    padding: 40px;
-    position: absolute;
+    // height: 100%;
+    // width: 100%;
+    // background: white;
+    // position: fixed;
+    // top: 10%;
+    // max-width: 100%;
+    // min-width: 800px;
+    // padding-left: 100px;
+    // padding-right: 100px;
     h1 {
-      color: #4f566b;
-      font-family: "Inter500";
-      font-size: 48px;
-      font-style: normal;
-      font-weight: 500;
-      // line-height: 20px;
-      letter-spacing: 0em;
-      text-align: left;
-      margin: 40px 0;
+      // color: #4f566b;
+      // font-family: "Inter500";
+      // font-size: 48px;
+      // font-style: normal;
+      // font-weight: 500;
+      // // line-height: 20px;
+      // letter-spacing: 0em;
+      // text-align: left;
+      // margin: 40px 0;
     }
 
     .finish_content {
-      display: grid;
-      grid-template-rows: auto;
-      margin: 0 auto;
-      width: 1200px;
-      min-width: 100em;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
+      // display: grid;
+      // width: 100%;
+      // grid-template-rows: auto;
+      // margin: 0 auto;
+      // width: 1200px;
+      // min-width: 100em;
+      // position: absolute;
+      // top: 0;
+      // left: 0;
+      // right: 0;
       .finish_title {
-        width: 1400px;
-        border-bottom: 1px solid #c1c9d2;
+        // width: 1400px;
+        // border-bottom: 1px solid #c1c9d2;
       }
-      .finish_about {
-        display: grid;
-        grid-template-columns: min-content auto;
-        .finish_context {
-          padding: 20px;
-          margin-top: 40px;
-          h2 {
-            color: #4f566b;
-            font-family: "Inter500";
-            font-size: 28px;
-            font-style: normal;
-            font-weight: 500;
-            letter-spacing: 0em;
-            text-align: left;
-            margin: 0;
-          }
-          #price {
-            position: absolute;
-            bottom: 140px;
-            right: 250px;
-          }
-          .finish_context_list {
-            margin: 40px 0;
-            ul {
-              display: grid;
-              grid-template-rows: repeat (3, auto);
-              padding: 0;
-              color: #4f566b;
-              li {
-                font-family: "Inter500";
-                font-style: normal;
-                font-weight: 500;
-                font-size: 24px;
-                color: #4f566b;
-              }
-            }
-          }
-        }
-      }
+      // .finish_about {
+      //   display: grid;
+      //   grid-template-columns: min-content auto;
+      //   .finish_context {
+      //     padding: 20px;
+      //     margin-top: 40px;
+      //     h2 {
+      //       color: #4f566b;
+      //       font-family: "Inter500";
+      //       font-size: 28px;
+      //       font-style: normal;
+      //       font-weight: 500;
+      //       letter-spacing: 0em;
+      //       text-align: left;
+      //       margin: 0;
+      //     }
+      //     #price {
+      //       position: absolute;
+      //       bottom: 140px;
+      //       right: 250px;
+      //     }
+      //     .finish_context_list {
+      //       margin: 40px 0;
+      //       ul {
+      //         display: grid;
+      //         grid-template-rows: repeat (3, auto);
+      //         padding: 0;
+      //         color: #4f566b;
+      //         li {
+      //           font-family: "Inter500";
+      //           font-style: normal;
+      //           font-weight: 500;
+      //           font-size: 24px;
+      //           color: #4f566b;
+      //         }
+      //       }
+      //     }
+      //   }
+      // }
     }
   }
 }

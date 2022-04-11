@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 import VueRouter from "vue-router";
 
 const guard = function (to, from, next) {
@@ -156,7 +156,7 @@ const routes = [
     },
   },
   {
-    path: "/InfoDevice/",
+    path: "/InfoDevice",
     name: "InfoDevice",
     component: () =>
       import(
@@ -199,7 +199,15 @@ const routes = [
       guard(to, from, next);
     },
   },
-
+  {
+    path: "/info-admin/",
+    name: "Admin",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/Admin.vue"),
+    beforeEnter: (to, from, next) => {
+      guard(to, from, next);
+    },
+  },
   {
     // сопоставляется со всем
     path: "/:catchAll(.*)",
@@ -209,7 +217,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes,
 });
 
