@@ -1,7 +1,6 @@
 <template>
   <div class="viewRequest">
     <div class="card text-center">
-
       <div class="card-header">
         <h1>{{ title }} {{ Request._id }}</h1>
       </div>
@@ -47,14 +46,13 @@
         Заявка Создана {{ Request.DataCreateRequest }}
       </div>
     </div>
-  
   </div>
 </template>
 <script>
 import iniciator from "../assets/q.jpg";
 import dog from "../assets/i.jpg";
 import logo from "../components/PhoneRequest";
-import "semantic-ui-css"
+import "semantic-ui-css";
 export default {
   data() {
     return {
@@ -78,7 +76,7 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style lang="scss" scoped>
 .viewRequest_block {
   display: grid;
   grid-template-columns: min-content auto;
