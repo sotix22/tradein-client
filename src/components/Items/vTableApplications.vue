@@ -46,7 +46,7 @@
             <Status :Status="StatusFalse" v-else />
           </td>
           <td class="Eye">
-            <img @click="PreOn(request._id)" :src="Eye.Img" :alt="Eye.Title" />
+            <img :src="Eye.Img" :alt="Eye.Title" @click="PreOn(request._id)" />
           </td>
         </tr>
       </tbody>
@@ -73,8 +73,8 @@
           </div>
         </th>
       </tr>
-      <div v-if="Pre" class="pre">
-        <Preview @CloseE="PreClose" v-on:Close="Close" :id="idViewRequest" />
+      <div class="pre" v-if="dialogVisible">
+        <Preview v-model="dialogVisible" :id="idViewRequest" />
       </div>
     </table>
   </section>
@@ -94,7 +94,7 @@ export default {
       Skip: 0,
       Page: 1,
       loading: false,
-      Pre: false,
+      dialogVisible: false,
       StatusTrue: "Подтверждено",
       StatusFalse: "Не Подтверждено",
       StatusPending: "В ожидании",
@@ -147,12 +147,12 @@ export default {
   },
   components: { TitleTable, Status, Preview, NullRequests },
   methods: {
-    PreClose: function () {
+    PreClose() {
       this.Pre = false;
     },
-    PreOn: function (id) {
+    PreOn(id) {
       this.idViewRequest = id;
-      this.Pre = true;
+      this.dialogVisible = true;
     },
     Sort(Key) {
       this.Page = 1;
@@ -186,13 +186,7 @@ export default {
 .yellow {
   color: #965e00;
 }
-.pre {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
+
 .content-table {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr min-content;
