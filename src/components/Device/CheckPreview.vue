@@ -3,7 +3,6 @@
     <div class="check_block">
       <div class="check_block_header">
         <div class="check_block_header_title">
-          <h1>ЧЕК-ЛИСТ</h1>
           <span>
             {{
               new Date(Date.parse(Request.DataCreateRequest)).toLocaleString(
@@ -65,6 +64,9 @@
         </div>
       </div>
     </div>
+    <el-button type="primary" @click="$emit('close')"
+      >Закрыть чек лист</el-button
+    >
   </div>
 </template>
 <script>
@@ -96,8 +98,12 @@ export default {
 </script>
 <style lang="scss" scoped>
 .check {
+  width: 100%;
+  max-width: 500px;
   z-index: 100;
   background-color: #efefef;
+  display: grid;
+  margin: 0 auto;
   .check_block {
     display: grid;
     padding: 60px;
@@ -112,8 +118,8 @@ export default {
           margin-bottom: 40px;
           li {
             display: grid;
-            grid-template-columns: min-content auto;
-            margin-bottom: 5px;
+            grid-template-columns: auto 1fr;
+            grid-gap: 5px;
           }
         }
       }
@@ -129,4 +135,3 @@ export default {
   }
 }
 </style>
-
